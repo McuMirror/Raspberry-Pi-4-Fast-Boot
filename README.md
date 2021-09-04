@@ -52,6 +52,7 @@ sudo systemctl disable keyboard-setup.service
 sudo systemctl disable systemd-journald
 sudo systemctl disable systemd-timesyncd
 sudo systemctl disable systemd-udev-trigger
+sudo systemctl disable rpi-eeprom-update.service
 sudo systemctl disable apt-daily.service
 sudo systemctl disable wpa_supplicant
 sudo systemctl disable wifi-country.service
@@ -110,8 +111,8 @@ console=serial0,115200 console=tty1 root=PARTUUID=61dc8113-02 rootfstype=ext4 el
 Let's reboot the pi and check how much we could reduce the boot time
 ```
 sudo systemd-analyze time
-Startup finished in 1.127s (kernel) + 2.479s (userspace) = 3.606s 
-graphical.target reached after 2.450s in userspace
+Startup finished in 1.116s (kernel) + 2.454s (userspace) = 3.571s
+graphical.target reached after 2.422s in userspace
 ```
-Amazing result. We got it down to just 3.6 seconds
+Amazing result. We got it down to just 3.5 seconds
 
