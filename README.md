@@ -20,7 +20,7 @@ The first tweak is to disable waiting for network on boot. This can be done thro
 This will bring up a. Follow this path to disable:\
 System Options -> Network at Boot -> No -> Ok
 
-# Disable Services 
+# Disable services 
 The next tweak is disabling not needed services\
 Raspberry PI Os comes with a handy command which prints a list of all services sorted by start time
 ```
@@ -96,7 +96,7 @@ over_voltage=2
 arm_freq=1850
 initial_turbo=40
 ```
-# Cmdline File
+# Cmdline file
 The last fix is the cmdline.txt file. Here we will disable the boot messages (yes, this takes time)\
 ```
 sudo nano /boot/cmdline.txt
