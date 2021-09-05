@@ -97,7 +97,7 @@ arm_freq=1850
 initial_turbo=40
 ```
 # Cmdline file
-The last fix is the cmdline.txt file. Here we will disable the boot messages (yes, this takes time)\
+The last fix is the cmdline.txt file. Here we will disable the boot messages (yes, this takes time)
 ```
 sudo nano /boot/cmdline.txt
 ```
